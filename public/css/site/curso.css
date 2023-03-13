@@ -1,0 +1,146 @@
+.title-filter{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.form-filter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-filter select{
+    padding: 5px 0;
+    margin-right: 10px;
+}
+.form-filter button{
+    width: 105px;
+    margin-right: 10px;
+    height: 35px;
+    border: 0;
+    background: #1517B9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form-filter button:hover{
+    background-color: #1416a2;
+}
+.form-filter button:active{
+    background-color: #131596;
+}
+
+.form-filter .button-clear{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    padding: 5px 17px;
+    background: #fd0f3b;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.form-filter .button-clear:hover{
+    background: #d30c31;
+}
+.form-filter .button-clear:active{
+    background: #b60929;
+}
+
+.cursos{
+    margin-top: 120px;
+}
+
+.cursos .container-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cursos  .container-cursos a{
+    color: black;
+    text-decoration: none;
+}
+.container-cursos .card-curso{
+    width: 250px;
+    min-height: 300px;
+}
+.cursos .title-cursos {
+    color: #3e3e3e;
+}
+.cursos .container-cursos .card-curso .img-curso{
+    overflow: hidden;
+}
+.cursos .container-cursos .card-curso .img-curso img{
+    width: 250px;
+    height: 250px;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+.cursos .container-cursos a:hover > .card-curso .img-curso img{
+    transform: scale(1.05);
+}
+.cursos .container-cursos .card-curso .desc-curso .title{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+.cursos .container-cursos .card-curso .desc-curso .valor{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+
+@media screen and (max-width: 800px){
+    .container-cursos .card-curso{
+        width: 200px;
+        min-height: 300px;
+    }
+    .cursos .container-cursos .card-curso .img-curso img{
+        width: 200px;
+        height: 200px;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }   
+}
+
+@media screen and (max-width: 650px){
+
+    .form-filter{
+        flex-direction: column;
+    }
+
+    .form-filter select{
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    .form-filter button{
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    .form-filter .button-clear{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .container-cursos .card-curso{
+        width: 170px;
+        min-height: 300px;
+    }
+    .cursos .container-cursos .card-curso .img-curso img{
+        width: 170px;
+        height: 170px;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }
+
+    .cursos .container-cursos .card-curso .desc-curso .title{
+        font-size: 1.1rem;
+    }
+    .cursos .container-cursos .card-curso .desc-curso .valor{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:550px){
+    .cursos .container-cursos{
+        justify-content: center;
+    }
+}

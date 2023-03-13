@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+.error-contact{
+    width: 100%;
+}
+
+.banner{
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh;
+    background: url('/assets/site/banner/banner-background.webp') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner .container-banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner .container-banner .title-banner{
+    font-family: 'PT Serif', serif;
+    font-size: 3rem !important;
+    font-weight: 600;
+    color: #1517B9;
+}
+.banner .container-banner .slogan{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sobre .sobre-text{
+    font-size: 1.2em;
+}
+.sobre .img-sobre{
+    width: 100%;
+    height: 400px;
+}
+.sobre .img-sobre img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cursos .cursos-online .container-cursos-online{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cursos .cursos-online .container-cursos-online a{
+    color: black;
+    text-decoration: none;
+}
+.cursos-online .container-cursos-online .card-curso{
+    width: 250px;
+    min-height: 300px;
+}
+.cursos-online .title-cursos-online {
+    color: #3e3e3e;
+}
+.cursos-online .container-cursos-online .card-curso .img-curso{
+    overflow: hidden;
+}
+.cursos-online .container-cursos-online .card-curso .img-curso img{
+    width: 250px;
+    height: 250px;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+.cursos .cursos-online .container-cursos-online a:hover > .card-curso .img-curso img{
+    transform: scale(1.05);
+}
+.cursos-online .container-cursos-online .card-curso .desc-curso .title{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+.cursos-online .container-cursos-online .card-curso .desc-curso .valor{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+
+.cursos .cursos-presenciais .container-cursos-presenciais{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cursos-presenciais .title-cursos-presenciais {
+    color: #3e3e3e;
+}
+.cursos .cursos-presenciais .container-cursos-presenciais a{
+    color: black;
+    text-decoration: none;
+}
+.cursos-presenciais .container-cursos-presenciais .card-curso{
+    width: 250px;
+    min-height: 300px;
+}
+.cursos-presenciais .container-cursos-presenciais .card-curso .img-curso{
+    overflow: hidden;
+}
+.cursos-presenciais .container-cursos-presenciais .card-curso .img-curso img{
+    width: 250px;
+    height: 250px;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+.cursos-presenciais .container-cursos-presenciais a:hover > .card-curso .img-curso img{
+    transform: scale(1.05);
+}
+.cursos-presenciais .container-cursos-presenciais .card-curso .desc-curso .title{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+.cursos-presenciais .container-cursos-presenciais .card-curso .desc-curso .valor{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #1517B9;
+}
+
+.contato{
+    width: 100%;
+    height: 550px;
+    background: url('/assets/site/contatos/contact-banner.webp') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contato .title-container{
+    color: #FFF !important;
+}
+.contato .container-contato{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contato .container-contato,
+.contato .container-contato .form-contato,
+.contato .container-contato .form-contato .input-field{
+    width: 100%;
+}
+.contato .container-contato .form-contato .input-field label{
+    display: block;
+    font-size: 1.3em;
+    color: #FFF;
+    font-weight: 600;
+}
+.contato .container-contato .form-contato .input-field input{
+    width: 100%;
+    outline: none;
+    padding: 2px 5px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.contato .container-contato .form-contato .input-field input:focus{
+    outline: 3px solid #1517B9;
+}
+.contato .container-contato .form-contato .input-field input::placeholder{
+    color: rgb(227, 54, 54);
+}
+.contato .container-contato .form-contato .textarea-field label{
+    display: block;
+    font-size: 1.3em;
+    color: #FFF;
+    font-weight: 600;
+}
+.contato .container-contato .form-contato .textarea-field textarea{
+    width: 100%;
+    outline: none;
+    padding: 2px 5px;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.contato .container-contato .form-contato .textarea-field textarea:focus{
+    outline: 3px solid #1517B9;
+}
+.contato .container-contato .form-contato .btn-submit{
+    width: 100%;
+    height: 40px;
+    background-color: #1517B9;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.contato .container-contato .form-contato .btn-submit:hover{
+    background-color: #1416a2;
+}
+.contato .container-contato .form-contato .btn-submit:active{
+    background-color: #131596;
+}
+
+@media screen and (max-width:550px){
+    .cursos .cursos-online .container-cursos-online{
+        justify-content: center;
+    }
+    .cursos .cursos-presenciais .container-cursos-presenciais{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:420px){
+    .sobre .img-sobre{
+        width: 100%;
+        height: 300px;
+    }
+    .sobre .img-sobre img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .banner .container-banner .title-banner{
+        font-size: 2.3rem;
+    }
+    .banner .container-banner .slogan{
+        font-size: 1.6rem;
+    }
+}

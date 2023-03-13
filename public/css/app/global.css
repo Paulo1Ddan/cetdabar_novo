@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F3F4F6;
+}
+p{
+    margin: 0;
+}
+[active]{
+    border-bottom: 2px #1C391D solid;
+}
+[active] a{
+    color: #1C391D !important;
+}
+[default-position]{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-text p{
+    font-size: 1.2rem;
+}
+
+header{
+    min-height: 100px;
+    width: 100%;
+    border-top: 1px rgb(235, 235, 235) solid;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    font-size: 1.2rem;
+}

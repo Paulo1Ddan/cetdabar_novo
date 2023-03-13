@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('.menu-close').hide();
+    $('.menu-open').click(function(){
+        $('.menu-open').hide()
+        $('.container-mobile-header').slideToggle("fast")
+        $('.menu-close').show();
+    })
+    $('.menu-close').click(function(){
+        $('.menu-close').hide()
+        $('.container-mobile-header').slideToggle('fast')
+        $('.menu-open').show()
+    })
+})

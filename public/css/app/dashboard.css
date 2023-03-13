@@ -1,0 +1,12 @@
+.options{
+    height: 200px;
+}
+.icon-options{
+    width: 120px;
+    height: 100%;
+    font-size: 7em;
+}
+.container-options{
+    width: 100%;
+    height: 100%;
+}
