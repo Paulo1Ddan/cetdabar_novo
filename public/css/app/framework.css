@@ -1,0 +1,23 @@
+.column-6{
+    width: 48%;
+    margin: 0 1%;
+}
+.column-4{
+    width: 48%;
+    margin: 0 1%;
+}
+.column-6{
+    width: 48%;
+    margin: 0 1%;
+}
+.column-6{
+    width: 48%;
+    margin: 0 1%;
+}
+
+
+@media screen and (max-width:768px){
+    .column-md-12{
+        width: 100%;
+    }
+}

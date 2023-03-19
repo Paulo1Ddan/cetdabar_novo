@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CetdabarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +14,11 @@ use App\Http\Controllers\CetdabarController;
 |
 */
 
-Route::get('/', [CetdabarController::class, 'index'])->name('site.home');
-Route::get('/sobre', [CetdabarController::class, 'sobre'])->name('site.sobre');
-Route::get('/cursos', [CetdabarController::class, 'cursos'])->name('site.cursos');
-Route::get('/cursos/{curso}', [CetdabarController::class, 'showCurso'])->name('site.cursos.show');
-Route::get('/blog', [CetdabarController::class, 'index'])->name('site.blog');
-Route::get('/blog/{artigo}', [CetdabarController::class, 'index'])->name('site.blog.show');
-Route::get('/contato', [CetdabarController::class, 'index'])->name('site.contato');
-Route::post('/contato', [CetdabarController::class, 'sendContato'])->name('site.contato');
-
+Route::get('/', [\App\Http\Controllers\CetdabarController::class, 'index'])->name('site.home');
+Route::get('/sobre', [\App\Http\Controllers\CetdabarController::class, 'sobre'])->name('site.sobre');
+Route::get('/cursos', [\App\Http\Controllers\CetdabarController::class, 'cursos'])->name('site.cursos');
+Route::get('/blog', [\App\Http\Controllers\CetdabarController::class, 'index'])->name('site.blog');
+Route::get('/contato', [\App\Http\Controllers\CetdabarController::class, 'index'])->name('site.contato');
 Route::get('/dashboard', function () {
     return view('app.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
